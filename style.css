@@ -1,4 +1,4 @@
-*{
+*,html{
     margin : 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,12 +10,24 @@ body{
     color: hsl(229, 23%, 23%);
 }
 #container{
-    background: url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg);
     background-color: hsl(185, 75%, 39%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.circle{
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+}
+.circle1{
+    top: -50%;
+    left: -50%;
+}
+.circle2{
+    bottom: -50%;
+    right: -50%;
 }
 
 .card{
@@ -24,6 +36,7 @@ body{
    max-width: 350px;
    border-radius: 15px;
    overflow: hidden;  
+   z-index: 10;
 }
 
 .upper-card{
